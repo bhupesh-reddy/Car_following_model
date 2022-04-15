@@ -1,1 +1,11 @@
 
+#Description
+
+The model output is saved as the following naming convention " Reaction_time_"{t+x}th" {pacc, pvel,pposition}" as a dataset header.
+
+t -> refers as time of the subject vehicle.
+
+x -> nth moment to the subject vehicle(in the work we have done, it is 0.1,0.2,0.3,0.4,0.5,1.0,1.8)
+
+pacc, pvel,pposition -> the predicted values obtained from the trained machine learning model.
+
