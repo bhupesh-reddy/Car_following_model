@@ -29,7 +29,7 @@ df = df_new[df_new["Time_per_pair"] > 30]
 
 df = df.drop(['nextframeAcc','nextframesvel','nextframeposition'], axis=1)
 
-
+#shift funtion take different values of time, for 1 second it is -10,for 2 seconds  it is shift(-20).
 df["Reaction_time_1.0_acc"]=df.groupby(["LF_pairs"],as_index=False)["sacc"].shift(-10)
 df["Reaction_time_1.0_position"]=df.groupby(["LF_pairs"],as_index=False)["Local.Y"].shift(-10)
 df["Reaction_time_1.0_vel"]=df.groupby(["LF_pairs"],as_index=False)["svel"].shift(-10)
